@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 
-video = 'C:\\Users\\peggy\\OneDrive\\桌面\\NTOU\\機器視覺\\test_video.mp4'
+video = '.\\test_video.mp4'
 videoLeftUp = cv2.VideoCapture(video)
 videoLeftDown = cv2.VideoCapture(video)
 videoRightUp = cv2.VideoCapture(video)
@@ -16,7 +16,7 @@ width = (int(videoLeftUp.get(cv2.CAP_PROP_FRAME_WIDTH)))
 height = (int(videoLeftUp.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 
 
-videoWriter = cv2.VideoWriter('C:\\Users\\peggy\\OneDrive\\桌面\\4in1.mp4', cv2.VideoWriter_fourcc('M', 'P', '4', 'V'), fps, (width, height))
+videoWriter = cv2.VideoWriter('.\\4in1.mp4', cv2.VideoWriter_fourcc('M', 'P', '4', 'V'), fps, (width, height))
 
 
 while(videoLeftUp.isOpened()):
